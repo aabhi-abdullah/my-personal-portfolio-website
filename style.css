@@ -71,6 +71,7 @@ h4{
 
 .common-btn{
     height: 54px;
+    color: var(--bg-color);
     background: var(--brand-color);
     border: none;
     border-radius: 50px;
@@ -555,7 +556,7 @@ hr{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #383e45f6;
+        background-color: #383e45f5;
         height: 100vh;
         width: 100vw;
         position: absolute;
@@ -584,6 +585,9 @@ hr{
         transform: translateX(0);
         pointer-events: all;
         clip-path: circle(112% at 100% 0%);
+    }
+    #meter-section .box{
+        margin: 1rem 0rem;
     }
     /* -----------------------about us responsive------------- */
     #about-us{
@@ -659,7 +663,7 @@ hr{
         margin: 1.5rem 0;
     }
 }
-@media (max-width:375px){
+@media (max-width:425px){
     html{
         font-size: 80%;
     }
@@ -669,6 +673,9 @@ hr{
         grid-template-columns: 1fr;
         padding:3rem 0;
     }
+    header nav, #hero-section,#meter-section,#about-us,#skill-section,#footer{
+        padding: 0 3rem;
+        }
 }
 @media (min-width:1740px) and (max-width:2560px){
     header nav, #hero-section,#meter-section,#about-us,#skill-section,#my-work,#testimonials,#footer{
